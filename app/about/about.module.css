@@ -1,0 +1,22 @@
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    margin-bottom: 6rem;
+}
+
+.sectionTitle {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .sectionTitle {
+        font-size: 1.5rem;
+    }
+}

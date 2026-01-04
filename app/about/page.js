@@ -1,4 +1,5 @@
 import PageHero from '../../components/PageHero/PageHero';
+import styles from './about.module.css';
 
 export const metadata = {
     title: 'About Us | Openrize',
@@ -16,9 +17,9 @@ export default function AboutPage() {
             <section className="container" style={{ padding: '6rem 0' }}>
                 <div style={{ maxWidth: '1000px', margin: '0 auto' }}>
 
-                    <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '3rem', marginBottom: '6rem' }}>
+                    <div className={styles.grid}>
                         <div>
-                            <h3 style={{ fontSize: '1.8rem', marginBottom: '1rem' }}>Our History</h3>
+                            <h3 className={styles.sectionTitle}>Our History</h3>
                             <p style={{ color: 'var(--text-secondary)' }}>
                                 Starting as a small collective of freelance developers, we grew into a full-service agency
                                 by consistently delivering high-quality code and exceptional user experiences. Today, we partner
@@ -26,7 +27,7 @@ export default function AboutPage() {
                             </p>
                         </div>
                         <div>
-                            <h3 style={{ fontSize: '1.8rem', marginBottom: '1rem' }}>Core Values</h3>
+                            <h3 className={styles.sectionTitle}>Core Values</h3>
                             <ul style={{ listStyle: 'none', color: 'var(--text-secondary)' }}>
                                 <li style={{ marginBottom: '0.5rem' }}><strong>Innovation:</strong> Constantly exploring new horizons.</li>
                                 <li style={{ marginBottom: '0.5rem' }}><strong>Integrity:</strong> Honest code, transparent processes.</li>
