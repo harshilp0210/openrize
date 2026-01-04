@@ -22,7 +22,7 @@ export default function ContactPage() {
                         <h3 style={{ marginBottom: '1rem' }}>Support Channels</h3>
                         <p style={{ display: 'flex', alignItems: 'center', marginBottom: '1rem', color: 'var(--text-secondary)' }}>
                             <span style={{ marginRight: '1rem', color: 'var(--accent-blue)' }}>@</span>
-                            support@openrize.com
+                            openrize@gmail.com
                         </p>
                         <p style={{ display: 'flex', alignItems: 'center', color: 'var(--text-secondary)' }}>
                             <span style={{ marginRight: '1rem', color: 'var(--accent-blue)' }}>#</span>

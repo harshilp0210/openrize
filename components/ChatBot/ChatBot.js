@@ -23,9 +23,9 @@ const faqs = [
     },
     {
         question: "How can I contact you?",
-        answer: "You can reach us at support@openrize.com or use our contact form. We also offer 24/7 live chat support!",
+        answer: "You can reach us at openrize@gmail.com or use our contact form. We also offer 24/7 live chat support!",
         followUp: [
-            { label: "Send Email", response: "Email us at support@openrize.com and we'll respond within 24 hours." },
+            { label: "Send Email", response: "Email us at openrize@gmail.com and we'll respond within 24 hours." },
             { label: "Go to Contact Form", response: "Visit our Contact page to send us a message directly through the form." }
         ]
     },
