@@ -1,0 +1,87 @@
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6rem;
+    align-items: center;
+}
+
+.title {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.description {
+    color: var(--text-secondary);
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+}
+
+.imageContainer {
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(139, 69, 19, 0.1);
+}
+
+.imageContainer img {
+    width: 100%;
+    display: block;
+}
+
+.form {
+    background: var(--bg-secondary);
+    padding: 3rem;
+    border-radius: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.inputGroup {
+    margin-bottom: 1.5rem;
+}
+
+.inputGroup label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    color: var(--text-primary);
+}
+
+.inputGroup input,
+.inputGroup textarea {
+    width: 100%;
+    padding: 1rem;
+    background: var(--bg-primary);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    color: var(--text-primary);
+    font-family: inherit;
+}
+
+.inputGroup input:focus,
+.inputGroup textarea:focus {
+    outline: none;
+    border-color: var(--accent-blue);
+}
+
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .title {
+        font-size: 2.5rem;
+    }
+
+    .description {
+        font-size: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .form {
+        padding: 1.5rem;
+    }
+
+    .imageContainer {
+        display: none;
+    }
+}

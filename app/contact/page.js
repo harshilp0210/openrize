@@ -1,3 +1,5 @@
+import styles from './contact.module.css';
+
 export const metadata = {
     title: 'Contact | Openrize',
     description: 'Get in touch with us for your next project.',
@@ -5,14 +7,14 @@ export const metadata = {
 
 export default function ContactPage() {
     return (
-        <section className="container" style={{ paddingTop: '12rem', paddingBottom: '6rem' }}>
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '6rem', alignItems: 'center' }}>
+        <section className="container" style={{ paddingTop: '10rem', paddingBottom: '6rem' }}>
+            <div className={styles.grid}>
 
                 <div>
-                    <h1 className="text-gradient" style={{ fontSize: '3.5rem', marginBottom: '1.5rem' }}>
+                    <h1 className={`text-gradient ${styles.title}`}>
                         Let's Build Something
                     </h1>
-                    <p style={{ color: 'var(--text-secondary)', fontSize: '1.2rem', marginBottom: '3rem' }}>
+                    <p className={styles.description}>
                         Ready to start your digital construction? Reach out to us for a consultation, quote, or just a chat about technology.
                     </p>
 
@@ -27,37 +29,23 @@ export default function ContactPage() {
                             Live Chat Available 24/7
                         </p>
                     </div>
-                    <div style={{ borderRadius: '20px', overflow: 'hidden', boxShadow: '0 10px 30px rgba(139, 69, 19, 0.1)' }}>
-                        <img src="/contact-tech.png" alt="Global Tech Communication" style={{ width: '100%', display: 'block' }} />
+                    <div className={styles.imageContainer}>
+                        <img src="/contact-tech.png" alt="Global Tech Communication" />
                     </div>
                 </div>
 
-                <form style={{
-                    background: 'var(--bg-secondary)',
-                    padding: '3rem',
-                    borderRadius: '20px',
-                    border: '1px solid rgba(255, 255, 255, 0.05)'
-                }}>
-                    <div style={{ marginBottom: '1.5rem' }}>
-                        <label style={{ display: 'block', marginBottom: '0.5rem', fontSize: '0.9rem' }}>Name</label>
-                        <input type="text" style={{
-                            width: '100%', padding: '1rem', background: 'var(--bg-primary)',
-                            border: '1px solid rgba(255, 255, 255, 0.1)', borderRadius: '8px', color: 'white'
-                        }} />
+                <form className={styles.form}>
+                    <div className={styles.inputGroup}>
+                        <label>Name</label>
+                        <input type="text" placeholder="Your name" />
                     </div>
-                    <div style={{ marginBottom: '1.5rem' }}>
-                        <label style={{ display: 'block', marginBottom: '0.5rem', fontSize: '0.9rem' }}>Email</label>
-                        <input type="email" style={{
-                            width: '100%', padding: '1rem', background: 'var(--bg-primary)',
-                            border: '1px solid rgba(255, 255, 255, 0.1)', borderRadius: '8px', color: 'white'
-                        }} />
+                    <div className={styles.inputGroup}>
+                        <label>Email</label>
+                        <input type="email" placeholder="your@email.com" />
                     </div>
-                    <div style={{ marginBottom: '2rem' }}>
-                        <label style={{ display: 'block', marginBottom: '0.5rem', fontSize: '0.9rem' }}>Message</label>
-                        <textarea rows="5" style={{
-                            width: '100%', padding: '1rem', background: 'var(--bg-primary)',
-                            border: '1px solid rgba(255, 255, 255, 0.1)', borderRadius: '8px', color: 'white'
-                        }}></textarea>
+                    <div className={styles.inputGroup}>
+                        <label>Message</label>
+                        <textarea rows="5" placeholder="How can we help?"></textarea>
                     </div>
                     <button type="submit" className="btn" style={{ width: '100%' }}>Send Message</button>
                 </form>
