@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import styles from './Footer.module.css';
 
 const Footer = () => {
@@ -12,24 +13,23 @@ const Footer = () => {
                     <div className={styles.links}>
                         <h4>Services</h4>
                         <ul>
-                            <li>Web Development</li>
-                            <li>Mobile Apps</li>
-                            <li>Cloud Solutions</li>
-                            <li>AI Integration</li>
+                            <li><Link href="/services#web-development">Web Development</Link></li>
+                            <li><Link href="/services#digital-marketing">Digital Marketing</Link></li>
+                            <li><Link href="/services#ai-ml">AI & Machine Learning</Link></li>
+                            <li><Link href="/services#generative-ai">Generative AI</Link></li>
                         </ul>
                     </div>
                     <div className={styles.links}>
                         <h4>Company</h4>
                         <ul>
-                            <li>About Us</li>
-                            <li>Careers</li>
-                            <li>Contact</li>
-                            <li>Privacy Policy</li>
+                            <li><Link href="/about">About Us</Link></li>
+                            <li><Link href="/pricing">Pricing</Link></li>
+                            <li><Link href="/contact">Contact</Link></li>
                         </ul>
                     </div>
                 </div>
                 <div className={styles.bottom}>
-                    <p>&copy; {new Date().getFullYear()} Openrize using Next.js & Vanilla CSS. All rights reserved.</p>
+                    <p>&copy; {new Date().getFullYear()} Openrize. All rights reserved.</p>
                 </div>
             </div>
         </footer>
