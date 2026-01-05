@@ -1,6 +1,14 @@
 import Link from 'next/link';
 import styles from './Footer.module.css';
 
+const socialLinks = [
+    { name: 'LinkedIn', url: 'https://linkedin.com/company/openrize', icon: '🔗' },
+    { name: 'Twitter', url: 'https://twitter.com/openrize', icon: '𝕏' },
+    { name: 'Instagram', url: 'https://instagram.com/openrize', icon: '📷' },
+    { name: 'Facebook', url: 'https://facebook.com/openrize', icon: '📘' },
+    { name: 'GitHub', url: 'https://github.com/openrize', icon: '💻' },
+];
+
 const Footer = () => {
     return (
         <footer className={styles.footer}>
@@ -9,6 +17,20 @@ const Footer = () => {
                     <div className={styles.brand}>
                         <h3>Openrize</h3>
                         <p>Building the foundation for your digital future.</p>
+                        <div className={styles.social}>
+                            {socialLinks.map((social, i) => (
+                                <a
+                                    key={i}
+                                    href={social.url}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className={styles.socialLink}
+                                    title={social.name}
+                                >
+                                    {social.icon}
+                                </a>
+                            ))}
+                        </div>
                     </div>
                     <div className={styles.links}>
                         <h4>Services</h4>

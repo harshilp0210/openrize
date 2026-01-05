@@ -24,6 +24,32 @@
 .brand p {
     color: var(--text-secondary);
     max-width: 300px;
+    margin-bottom: 1.5rem;
+}
+
+.social {
+    display: flex;
+    gap: 0.75rem;
+}
+
+.socialLink {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg-primary);
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.socialLink:hover {
+    background: var(--accent-gradient);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(139, 69, 19, 0.2);
 }
 
 .links h4 {
