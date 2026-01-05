@@ -1,79 +1,136 @@
 import PageHero from '../../components/PageHero/PageHero';
+import styles from './pricing.module.css';
+import Link from 'next/link';
 
 export const metadata = {
     title: 'Pricing | Openrize',
-    description: 'Choose the right financial model for your software project.',
+    description: 'Transparent UK software development pricing. Hourly rates, project-based, and retainer packages.',
 };
+
+const hourlyRates = [
+    { role: 'Web Developer', junior: '£35-50', mid: '£50-80', senior: '£80-120' },
+    { role: 'Mobile Developer', junior: '£40-60', mid: '£60-90', senior: '£90-140' },
+    { role: 'AI/ML Engineer', junior: '£60-80', mid: '£80-120', senior: '£120-180' },
+    { role: 'DevOps Engineer', junior: '£50-70', mid: '£70-100', senior: '£100-150' },
+    { role: 'UI/UX Designer', junior: '£30-45', mid: '£45-70', senior: '£70-100' },
+];
+
+const projectPricing = [
+    { type: 'Landing Page', small: '£500-1,500', medium: '£1,500-3,000', large: '£3,000-5,000' },
+    { type: 'Business Website', small: '£2,000-5,000', medium: '£5,000-15,000', large: '£15,000-30,000' },
+    { type: 'E-commerce Store', small: '£5,000-10,000', medium: '£10,000-25,000', large: '£25,000-50,000+' },
+    { type: 'Custom Web App', small: '£10,000-25,000', medium: '£25,000-75,000', large: '£75,000-200,000+' },
+    { type: 'Mobile App', small: '£15,000-30,000', medium: '£30,000-80,000', large: '£80,000-200,000+' },
+];
+
+const retainerPackages = [
+    { name: 'Starter', hours: '10-20 hrs/mo', price: '£1,000-2,500', features: ['Bug Fixes', 'Minor Updates', 'Email Support'] },
+    { name: 'Growth', hours: '40-60 hrs/mo', price: '£4,000-7,500', features: ['Feature Development', 'Priority Support', 'Weekly Calls'], popular: true },
+    { name: 'Enterprise', hours: '80+ hrs/mo', price: '£10,000+', features: ['Dedicated Team', '24/7 Support', 'Strategic Planning'] },
+];
 
 export default function PricingPage() {
     return (
         <>
             <PageHero
-                title="Pricing Models"
-                description="Businesses must choose between two primary financial structures when hiring developers."
+                title="Transparent Pricing"
+                description="UK market rates for quality software development. No hidden fees, no surprises."
                 backgroundImage="/pricing-tech.png"
             />
-            <section className="container" style={{ padding: '6rem 0' }}>
 
-                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '3rem' }}>
+            {/* Hourly Rates Section */}
+            <section className="container" style={{ padding: '5rem 0' }}>
+                <h2 className={styles.sectionTitle}>Hourly Rates</h2>
+                <p className={styles.sectionDesc}>Flexible engagement for ongoing projects and team augmentation.</p>
 
-                    {/* Fixed Price Card */}
-                    <div style={{
-                        background: 'var(--bg-secondary)',
-                        border: '1px solid rgba(255, 255, 255, 0.05)',
-                        borderRadius: '20px',
-                        padding: '3rem',
-                        display: 'flex',
-                        flexDirection: 'column',
-                        position: 'relative',
-                        overflow: 'hidden'
-                    }}>
-                        <div style={{
-                            position: 'absolute', top: 0, left: 0, right: 0, height: '4px', background: 'var(--accent-blue)'
-                        }}></div>
-                        <h2 style={{ fontSize: '2rem', marginBottom: '1rem' }}>Fixed-Price Model</h2>
-                        <p style={{ color: 'var(--text-secondary)', marginBottom: '2rem', minHeight: '60px' }}>
-                            Best for simple, well-defined projects with strict budgets. It offers financial certainty but lacks flexibility for changes.
-                        </p>
-                        <ul style={{ listStyle: 'none', marginBottom: '3rem', flex: 1 }}>
-                            {['Strict Budgets', 'Financial Certainty', 'Limited Flexibility', 'Well-defined Projects'].map(item => (
-                                <li key={item} style={{ marginBottom: '1rem', display: 'flex', alignItems: 'center', color: 'var(--text-primary)' }}>
-                                    <span style={{ color: 'var(--accent-blue)', marginRight: '1rem', fontWeight: 'bold' }}>✓</span> {item}
-                                </li>
+                <div className={styles.tableWrapper}>
+                    <table className={styles.table}>
+                        <thead>
+                            <tr>
+                                <th>Role</th>
+                                <th>Junior</th>
+                                <th>Mid-Level</th>
+                                <th>Senior</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {hourlyRates.map((rate, i) => (
+                                <tr key={i}>
+                                    <td>{rate.role}</td>
+                                    <td>{rate.junior}/hr</td>
+                                    <td>{rate.mid}/hr</td>
+                                    <td>{rate.senior}/hr</td>
+                                </tr>
                             ))}
-                        </ul>
-                        <button className="btn" style={{ width: '100%', textAlign: 'center' }}>Get a Quote</button>
-                    </div>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
 
-                    {/* Hourly Rate Card */}
-                    <div style={{
-                        background: 'var(--bg-secondary)',
-                        border: '1px solid var(--accent-purple)',
-                        borderRadius: '20px',
-                        padding: '3rem',
-                        display: 'flex',
-                        flexDirection: 'column',
-                        position: 'relative',
-                        boxShadow: '0 0 30px rgba(188, 19, 254, 0.1)'
-                    }}>
-                        <div style={{
-                            position: 'absolute', top: '2rem', right: '2rem', background: 'rgba(188, 19, 254, 0.2)',
-                            color: 'var(--accent-purple)', padding: '0.3rem 0.8rem', borderRadius: '20px', fontSize: '0.8rem', fontWeight: 'bold'
-                        }}>Most Popular</div>
-                        <h2 style={{ fontSize: '2rem', marginBottom: '1rem' }}>Hourly Rates</h2>
-                        <p style={{ color: 'var(--text-secondary)', marginBottom: '2rem', minHeight: '60px' }}>
-                            Ideal for complex or innovative projects where requirements evolve. It provides high flexibility and transparency but carries budget uncertainty.
-                        </p>
-                        <ul style={{ listStyle: 'none', marginBottom: '3rem', flex: 1 }}>
-                            {['Complex Projects', 'High Flexibility', 'Transparency', 'Budget Uncertainty'].map(item => (
-                                <li key={item} style={{ marginBottom: '1rem', display: 'flex', alignItems: 'center', color: 'var(--text-primary)' }}>
-                                    <span style={{ color: 'var(--accent-purple)', marginRight: '1rem', fontWeight: 'bold' }}>✓</span> {item}
-                                </li>
-                            ))}
-                        </ul>
-                        <button className="btn" style={{ width: '100%', textAlign: 'center', background: 'var(--accent-purple)' }}>Detailed Rates</button>
-                    </div>
+            {/* Project-Based Pricing */}
+            <section style={{ background: 'var(--bg-secondary)', padding: '5rem 0' }}>
+                <div className="container">
+                    <h2 className={styles.sectionTitle}>Project-Based Pricing</h2>
+                    <p className={styles.sectionDesc}>Fixed quotes for defined scope. Know your costs upfront.</p>
 
+                    <div className={styles.tableWrapper}>
+                        <table className={styles.table}>
+                            <thead>
+                                <tr>
+                                    <th>Project Type</th>
+                                    <th>Small</th>
+                                    <th>Medium</th>
+                                    <th>Large</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {projectPricing.map((project, i) => (
+                                    <tr key={i}>
+                                        <td>{project.type}</td>
+                                        <td>{project.small}</td>
+                                        <td>{project.medium}</td>
+                                        <td>{project.large}</td>
+                                    </tr>
+                                ))}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            {/* Retainer Packages */}
+            <section className="container" style={{ padding: '5rem 0' }}>
+                <h2 className={styles.sectionTitle}>Monthly Retainer Packages</h2>
+                <p className={styles.sectionDesc}>Ongoing support and development with predictable monthly costs.</p>
+
+                <div className={styles.packagesGrid}>
+                    {retainerPackages.map((pkg, i) => (
+                        <div key={i} className={`${styles.packageCard} ${pkg.popular ? styles.popular : ''}`}>
+                            {pkg.popular && <span className={styles.popularBadge}>Most Popular</span>}
+                            <h3>{pkg.name}</h3>
+                            <div className={styles.price}>{pkg.price}<span>/month</span></div>
+                            <div className={styles.hours}>{pkg.hours}</div>
+                            <ul>
+                                {pkg.features.map((feature, j) => (
+                                    <li key={j}>✓ {feature}</li>
+                                ))}
+                            </ul>
+                            <Link href="/contact" className="btn" style={{ width: '100%', textAlign: 'center', display: 'block' }}>
+                                Get Started
+                            </Link>
+                        </div>
+                    ))}
+                </div>
+            </section>
+
+            {/* CTA */}
+            <section style={{ background: 'var(--bg-secondary)', padding: '4rem 0', textAlign: 'center' }}>
+                <div className="container">
+                    <h2 style={{ marginBottom: '1rem' }}>Need a Custom Quote?</h2>
+                    <p style={{ color: 'var(--text-secondary)', marginBottom: '2rem', maxWidth: '600px', margin: '0 auto 2rem' }}>
+                        Every project is unique. Contact us for a tailored proposal based on your specific requirements.
+                    </p>
+                    <Link href="/contact" className="btn">Request a Quote</Link>
                 </div>
             </section>
         </>
