@@ -16,42 +16,60 @@
     margin-bottom: 3rem;
 }
 
-/* Rotating Earth Globe */
+/* Rotating Earth Globe - Pole Rotation Effect */
 .globeWrapper {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 2rem;
-    perspective: 1000px;
 }
 
 .globeInner {
-    width: 300px;
-    height: 300px;
+    width: 280px;
+    height: 280px;
     border-radius: 50%;
     overflow: hidden;
     box-shadow:
         0 10px 40px rgba(139, 69, 19, 0.2),
-        0 0 60px rgba(139, 69, 19, 0.1);
-    animation: globeSpin 20s linear infinite;
-    transform-style: preserve-3d;
+        0 0 60px rgba(139, 69, 19, 0.1),
+        inset -30px -30px 60px rgba(0, 0, 0, 0.15),
+        inset 20px 20px 40px rgba(255, 255, 255, 0.1);
+    position: relative;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.3), transparent 50%);
 }
 
 .globeImage {
-    width: 100%;
+    width: 200%;
     height: 100%;
     object-fit: cover;
-    border-radius: 50%;
+    animation: globeScroll 25s linear infinite;
 }
 
-@keyframes globeSpin {
+/* Simulates pole rotation by scrolling the image horizontally */
+@keyframes globeScroll {
     from {
-        transform: rotateY(0deg);
+        transform: translateX(0);
     }
 
     to {
-        transform: rotateY(360deg);
+        transform: translateX(-50%);
     }
+}
+
+/* Overlay for 3D sphere effect */
+.globeInner::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 50%;
+    background: radial-gradient(circle at 30% 30%,
+            rgba(255, 255, 255, 0.2) 0%,
+            transparent 40%,
+            rgba(0, 0, 0, 0.1) 100%);
+    pointer-events: none;
 }
 
 .form {
