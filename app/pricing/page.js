@@ -34,7 +34,7 @@ export default function PricingPage() {
         <>
             <PageHero
                 title="Transparent Pricing"
-                description="UK market rates for quality software development. No hidden fees, no surprises."
+                description="Competitive rates for quality software development. No hidden fees, no surprises."
                 backgroundImage="/pricing-tech.png"
             />
 
