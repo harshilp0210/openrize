@@ -20,11 +20,23 @@
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0 10px 30px rgba(139, 69, 19, 0.1);
+    perspective: 1000px;
 }
 
 .imageContainer img {
     width: 100%;
     display: block;
+    animation: spin360 20s linear infinite;
+}
+
+@keyframes spin360 {
+    from {
+        transform: rotateY(0deg);
+    }
+
+    to {
+        transform: rotateY(360deg);
+    }
 }
 
 .form {
