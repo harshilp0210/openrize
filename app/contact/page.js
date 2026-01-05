@@ -29,8 +29,15 @@ export default function ContactPage() {
                             Live Chat Available 24/7
                         </p>
                     </div>
-                    <div className={styles.imageContainer}>
-                        <img src="/contact-tech.png" alt="Global Tech Communication" />
+
+                    {/* 3D Rotating Globe */}
+                    <div className={styles.globeContainer}>
+                        <div className={styles.globe}>
+                            <div className={`${styles.ring} ${styles.ring1}`}></div>
+                            <div className={`${styles.ring} ${styles.ring2}`}></div>
+                            <div className={`${styles.ring} ${styles.ring3}`}></div>
+                            <div className={styles.core}></div>
+                        </div>
                     </div>
                 </div>
 
