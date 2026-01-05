@@ -30,13 +30,10 @@ export default function ContactPage() {
                         </p>
                     </div>
 
-                    {/* 3D Rotating Globe */}
-                    <div className={styles.globeContainer}>
-                        <div className={styles.globe}>
-                            <div className={`${styles.ring} ${styles.ring1}`}></div>
-                            <div className={`${styles.ring} ${styles.ring2}`}></div>
-                            <div className={`${styles.ring} ${styles.ring3}`}></div>
-                            <div className={styles.core}></div>
+                    {/* Rotating Earth Globe */}
+                    <div className={styles.globeWrapper}>
+                        <div className={styles.globeInner}>
+                            <img src="/contact-tech.png" alt="Global Tech Communication" className={styles.globeImage} />
                         </div>
                     </div>
                 </div>
