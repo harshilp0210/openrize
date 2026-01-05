@@ -8,17 +8,17 @@ export const metadata = {
 };
 
 const projectPricing = [
-    { type: 'Landing Page', starter: '£0-500', standard: '£500-1,500', premium: '£1,500-3,000' },
-    { type: 'Business Website', starter: '£500-2,000', standard: '£2,000-5,000', premium: '£5,000-15,000' },
-    { type: 'E-commerce Store', starter: '£2,000-5,000', standard: '£5,000-15,000', premium: '£15,000-40,000' },
-    { type: 'Custom Web App', starter: '£5,000-15,000', standard: '£15,000-40,000', premium: '£40,000-100,000+' },
-    { type: 'Mobile App', starter: '£5,000-15,000', standard: '£15,000-50,000', premium: '£50,000-150,000+' },
-    { type: 'AI/ML Solution', starter: '£3,000-10,000', standard: '£10,000-30,000', premium: '£30,000-100,000+' },
+    { type: 'Landing Page', starter: '£0-699', standard: '£700-1,499', premium: '£1,500-2,999' },
+    { type: 'Business Website', starter: '£500-1,499', standard: '£1,500-4,999', premium: '£5,000-14,999' },
+    { type: 'E-commerce Store', starter: '£2,000-4,999', standard: '£5,000-14,999', premium: '£15,000-39,999' },
+    { type: 'Custom Web App', starter: '£5,000-14,999', standard: '£15,000-39,999', premium: '£40,000-99,999' },
+    { type: 'Mobile App', starter: '£5,000-14,999', standard: '£15,000-49,999', premium: '£50,000-149,999' },
+    { type: 'AI/ML Solution', starter: '£3,000-9,999', standard: '£10,000-29,999', premium: '£30,000-99,999' },
 ];
 
 const retainerPackages = [
-    { name: 'Starter', scope: 'Basic Support', price: '£500-1,500', features: ['Bug Fixes', 'Minor Updates', 'Email Support'] },
-    { name: 'Growth', scope: 'Active Development', price: '£2,000-5,000', features: ['Feature Development', 'Priority Support', 'Weekly Calls'], popular: true },
+    { name: 'Starter', scope: 'Basic Support', price: '£500-1,499', features: ['Bug Fixes', 'Minor Updates', 'Email Support'] },
+    { name: 'Growth', scope: 'Active Development', price: '£1,500-4,999', features: ['Feature Development', 'Priority Support', 'Weekly Calls'], popular: true },
     { name: 'Enterprise', scope: 'Full Partnership', price: '£5,000+', features: ['Dedicated Team', '24/7 Support', 'Strategic Planning'] },
 ];
 
