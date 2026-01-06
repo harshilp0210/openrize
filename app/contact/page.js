@@ -1,4 +1,5 @@
 import styles from './contact.module.css';
+import ContactForm from '../../components/ContactForm/ContactForm';
 
 export const metadata = {
     title: 'Contact | Openrize',
@@ -38,21 +39,7 @@ export default function ContactPage() {
                     </div>
                 </div>
 
-                <form className={styles.form}>
-                    <div className={styles.inputGroup}>
-                        <label>Name</label>
-                        <input type="text" placeholder="Your name" />
-                    </div>
-                    <div className={styles.inputGroup}>
-                        <label>Email</label>
-                        <input type="email" placeholder="your@email.com" />
-                    </div>
-                    <div className={styles.inputGroup}>
-                        <label>Message</label>
-                        <textarea rows="5" placeholder="How can we help?"></textarea>
-                    </div>
-                    <button type="submit" className="btn" style={{ width: '100%' }}>Send Message</button>
-                </form>
+                <ContactForm />
 
             </div>
         </section>
