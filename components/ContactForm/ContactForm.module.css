@@ -17,7 +17,8 @@
 }
 
 .inputGroup input,
-.inputGroup textarea {
+.inputGroup textarea,
+.inputGroup select {
     width: 100%;
     padding: 1rem;
     background: var(--bg-primary);
@@ -28,7 +29,8 @@
 }
 
 .inputGroup input:focus,
-.inputGroup textarea:focus {
+.inputGroup textarea:focus,
+.inputGroup select:focus {
     outline: none;
     border-color: var(--accent-blue);
 }

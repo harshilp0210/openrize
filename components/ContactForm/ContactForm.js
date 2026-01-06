@@ -51,6 +51,21 @@ export default function ContactForm() {
                 <input type="email" name="email" placeholder="your@email.com" required />
             </div>
             <div className={styles.inputGroup}>
+                <label>Phone Number</label>
+                <input type="tel" name="phone" placeholder="+1 (555) 000-0000" />
+            </div>
+            <div className={styles.inputGroup}>
+                <label>Inquiry About</label>
+                <select name="inquiry_type" required defaultValue="">
+                    <option value="" disabled>Select an option</option>
+                    <option value="Web Development">Web Development</option>
+                    <option value="Digital Marketing">Digital Marketing</option>
+                    <option value="AI & Machine Learning">AI & Machine Learning</option>
+                    <option value="Mobile App Development">Mobile App Development</option>
+                    <option value="General Inquiry">General Inquiry</option>
+                </select>
+            </div>
+            <div className={styles.inputGroup}>
                 <label>Message</label>
                 <textarea rows="5" name="message" placeholder="How can we help?" required></textarea>
             </div>
