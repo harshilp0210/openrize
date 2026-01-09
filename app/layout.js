@@ -5,8 +5,38 @@ import GlobalBackground from '../components/GlobalBackground/GlobalBackground';
 import ChatBot from '../components/ChatBot/ChatBot';
 
 export const metadata = {
+  metadataBase: new URL('https://openrize.com'),
   title: 'Openrize | End-to-End Software Development Services',
-  description: 'Openrize: Building your digital smart home with modern tech stacks and sustainable code.',
+  description: 'Openrize: Building your digital smart home with modern tech stacks and sustainable code. Web development, AI solutions, and digital transformation.',
+  manifest: '/manifest.json',
+  keywords: ['software development', 'web development', 'AI solutions', 'digital marketing', 'Openrize', 'PWA', 'Next.js'],
+  openGraph: {
+    title: 'Openrize | End-to-End Software Development Services',
+    description: 'Transforming businesses with tailored digital solutions.',
+    url: 'https://openrize.com',
+    siteName: 'Openrize',
+    images: [
+      {
+        url: '/logo-v4.png',
+        width: 800,
+        height: 600,
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Openrize',
+    description: 'End-to-End Software Development Services',
+    images: ['/logo-v4.png'],
+  },
+  viewport: {
+    width: 'device-width',
+    initialScale: 1,
+    maximumScale: 1,
+  },
+  themeColor: '#ffffff',
 };
 
 export default function RootLayout({ children }) {
