@@ -1,0 +1,57 @@
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.category {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--text-secondary);
+    margin-bottom: 2rem;
+    font-weight: 600;
+}
+
+.content h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    background: var(--accent-gradient);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.content p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem;
+}
+
+.content ul {
+    margin-bottom: 2rem;
+    padding-left: 1.5rem;
+}
+
+.content li {
+    margin-bottom: 0.5rem;
+    color: var(--text-secondary);
+}
+
+.actions {
+    margin-top: 4rem;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.backLink {
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.backLink:hover {
+    color: var(--text-primary);
+}

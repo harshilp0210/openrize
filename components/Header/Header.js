@@ -21,12 +21,13 @@ const Header = () => {
             <div className={`container ${styles.container}`}>
                 <Link href="/" className={styles.logo}>
                     <Image
-                        src="/logo.png"
+                        src="/logo-v4.png"
                         alt="Openrize Logo"
-                        width={280}
-                        height={70}
+                        width={220}
+                        height={65}
+                        className={styles.logo}
                         priority
-                        style={{ width: 'auto', height: '70px', objectFit: 'contain' }}
+                        style={{ width: '220px', height: 'auto', maxHeight: '70px', objectFit: 'contain' }}
                     />
                 </Link>
 

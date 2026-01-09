@@ -48,14 +48,16 @@ const Footer = () => {
                 <div className={styles.top}>
                     <div className={styles.brand}>
                         <Link href="/" style={{ display: 'inline-block', marginBottom: '1rem' }}>
-                            <Image
-                                src="/logo.png"
-                                alt="Openrize Logo"
-                                width={260}
-                                height={80}
-                                style={{ width: '260px', height: 'auto' }}
-                            />
-                        </Link>
+                            <div className={styles.logoContainer}>
+                                <Image
+                                    src="/logo-v4.png"
+                                    alt="Openrize Footer Logo"
+                                    width={180}
+                                    height={55}
+                                    className={styles.logo}
+                                    style={{ width: '180px', height: 'auto', objectFit: 'contain' }}
+                                />
+                            </div>        </Link>
                         <p>Building the foundation for your digital future.</p>
                         <div className={styles.social}>
                             {socialLinks.map((social, i) => (
