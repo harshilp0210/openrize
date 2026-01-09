@@ -34,8 +34,8 @@ const GitHubIcon = () => (
 );
 
 const socialLinks = [
-    { name: 'LinkedIn', url: 'https://linkedin.com/company/openrize', icon: <LinkedInIcon /> },
-    { name: 'Twitter', url: 'https://twitter.com/openrize', icon: <TwitterIcon /> },
+    { name: 'LinkedIn', url: 'https://www.linkedin.com/in/openrize/', icon: <LinkedInIcon /> },
+    { name: 'Twitter', url: 'https://twitter.com/openrize4', icon: <TwitterIcon /> },
     { name: 'Instagram', url: 'https://instagram.com/openrize', icon: <InstagramIcon /> },
     { name: 'Facebook', url: 'https://facebook.com/openrize', icon: <FacebookIcon /> },
     { name: 'GitHub', url: 'https://github.com/openrize', icon: <GitHubIcon /> },
