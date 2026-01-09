@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import styles from './Header.module.css';
 
 const Header = () => {
@@ -19,7 +20,14 @@ const Header = () => {
         <header className={styles.header}>
             <div className={`container ${styles.container}`}>
                 <Link href="/" className={styles.logo}>
-                    Openrize
+                    <Image
+                        src="/logo.png"
+                        alt="Openrize Logo"
+                        width={280}
+                        height={70}
+                        priority
+                        style={{ width: 'auto', height: '70px', objectFit: 'contain' }}
+                    />
                 </Link>
 
                 {/* Mobile Hamburger Button */}

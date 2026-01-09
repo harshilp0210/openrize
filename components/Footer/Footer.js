@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import styles from './Footer.module.css';
 
 // SVG Icons
@@ -46,7 +47,15 @@ const Footer = () => {
             <div className={`container ${styles.container}`}>
                 <div className={styles.top}>
                     <div className={styles.brand}>
-                        <h3>Openrize</h3>
+                        <Link href="/" style={{ display: 'inline-block', marginBottom: '1rem' }}>
+                            <Image
+                                src="/logo.png"
+                                alt="Openrize Logo"
+                                width={260}
+                                height={80}
+                                style={{ width: '260px', height: 'auto' }}
+                            />
+                        </Link>
                         <p>Building the foundation for your digital future.</p>
                         <div className={styles.social}>
                             {socialLinks.map((social, i) => (
