@@ -5,6 +5,20 @@ import styles from './Portfolio.module.css';
 
 const projects = [
     {
+        title: "Foodies Choice POS",
+        description: "A modern Point of Sale system for restaurants, featuring inventory management, order processing, and real-time sales tracking.",
+        url: "https://foodies-choice-pos-cbng.vercel.app/",
+        tags: ["Next.js", "POS", "Retails"],
+        image: "/portfolio-foodies.png"
+    },
+    {
+        title: "Review Management System",
+        description: "A comprehensive review management platform helping businesses aggregate, monitor, and respond to customer feedback.",
+        url: "https://reviewmanagement.vercel.app/",
+        tags: ["Next.js", "SaaS", "Reputation"],
+        image: "/portfolio-aura.png"
+    },
+    {
         title: "Matrix Visas",
         description: "A professional UK visa consultancy website with dynamic service pages, contact forms, and modern responsive design.",
         url: "https://www.matrixvisas007.com/",
