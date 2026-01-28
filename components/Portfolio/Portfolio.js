@@ -5,18 +5,19 @@ import styles from './Portfolio.module.css';
 
 const projects = [
     {
+        title: "Review Management System",
+        description: "A comprehensive review management platform helping businesses aggregate, monitor, and respond to customer feedback.",
+        url: "https://reviewmanagement.vercel.app/",
+        tags: ["Next.js", "SaaS", "Reputation"],
+        image: "/portfolio-aura.png",
+        featured: true
+    },
+    {
         title: "Foodies Choice POS",
         description: "A modern Point of Sale system for restaurants, featuring inventory management, order processing, and real-time sales tracking.",
         url: "https://foodies-choice-pos-cbng.vercel.app/",
         tags: ["Next.js", "POS", "Retails"],
         image: "/portfolio-foodies.png"
-    },
-    {
-        title: "Review Management System",
-        description: "A comprehensive review management platform helping businesses aggregate, monitor, and respond to customer feedback.",
-        url: "https://reviewmanagement.vercel.app/",
-        tags: ["Next.js", "SaaS", "Reputation"],
-        image: "/portfolio-aura.png"
     },
     {
         title: "Matrix Visas",
@@ -49,7 +50,7 @@ const Portfolio = () => {
                             href={project.url}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className={styles.card}
+                            className={`${styles.card} ${project.featured ? styles.featuredCard : ''}`}
                             initial={{ opacity: 0, y: 30 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
@@ -58,8 +59,8 @@ const Portfolio = () => {
                         >
                             <div className={styles.imageWrapper}>
                                 <div className={styles.placeholder}>
-                                    <span>🌐</span>
-                                    <span className={styles.liveTag}>Live Project</span>
+                                    <span>{project.featured ? "⭐" : "🌐"}</span>
+                                    <span className={styles.liveTag}>{project.featured ? "Featured Project" : "Live Project"}</span>
                                 </div>
                             </div>
                             <div className={styles.content}>

@@ -39,6 +39,16 @@
     box-shadow: 0 10px 40px rgba(139, 69, 19, 0.15);
 }
 
+.featuredCard {
+    border: 2px solid rgba(212, 175, 55, 0.3);
+    box-shadow: 0 4px 20px rgba(212, 175, 55, 0.1);
+}
+
+.featuredCard:hover {
+    border-color: rgba(212, 175, 55, 0.6);
+    box-shadow: 0 10px 40px rgba(212, 175, 55, 0.2);
+}
+
 .imageWrapper {
     height: 200px;
     background: linear-gradient(135deg, rgba(139, 69, 19, 0.1), rgba(160, 82, 45, 0.1));
