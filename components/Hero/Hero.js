@@ -24,8 +24,7 @@ const Hero = () => {
                     transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
                     className={styles.title}
                 >
-                    Your <span className="text-gradient">Digital Journey</span><br />
-                    Starts Here
+                    Helping Local Businesses Get More Customers with <span className="text-gradient">Better Websites, Reviews & POS Systems</span>
                 </motion.h1>
 
                 <motion.p
@@ -34,7 +33,7 @@ const Hero = () => {
                     transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
                     className={styles.description}
                 >
-                    Transforming businesses with tailored digital solutions. From bespoke software to strategic marketing, we architect growth in the digital realm.
+                    Openrize helps restaurants, retail stores, and service businesses grow with modern websites, Google review automation, and fast POS solutions.
                 </motion.p>
 
                 <motion.div
@@ -43,11 +42,11 @@ const Hero = () => {
                     transition={{ duration: 0.8, delay: 0.6, ease: "easeOut" }}
                     className={styles.actions}
                 >
-                    <Link href="/contact" className="btn">
-                        Start Building
+                    <Link href="/audit" className="btn">
+                        Get a Free Audit
                     </Link>
-                    <Link href="/services" className={styles.secondaryLink}>
-                        View Blueprint &rarr;
+                    <Link href="/contact" className={styles.secondaryLink}>
+                        Book a Free Demo &rarr;
                     </Link>
                 </motion.div>
             </div>

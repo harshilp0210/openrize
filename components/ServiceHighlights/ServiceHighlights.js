@@ -7,52 +7,22 @@ import Link from 'next/link';
 
 const services = [
     {
-        title: 'Web Expertise',
+        title: 'Website Development',
         icon: '🌐',
-        desc: 'Architecting scalable, future-proof web ecosystems tailored to your enterprise DNA.',
+        desc: 'Mobile-friendly, fast websites. Designed to convert visitors into customers.',
         link: '/services#web-development'
     },
     {
-        title: 'Digital Growth',
-        icon: '🚀',
-        desc: 'Data-driven marketing strategies that amplify your brand voice and accelerate market penetration.',
+        title: 'Google Review Management',
+        icon: '⭐',
+        desc: 'Automated review requests. Improve Google rankings & trust.',
         link: '/services#digital-marketing'
     },
     {
-        title: 'AI & ML Solutions',
-        icon: '🧠',
-        desc: 'Harnessing the power of predictive intelligence to drive automation and strategic advantage.',
-        link: '/services#ai-ml'
-    },
-    {
-        title: 'Generative AI',
-        icon: '✨',
-        desc: 'Next-generation creativity and automation. Custom LLMs and synthetic data pipelines.',
-        link: '/services#generative-ai'
-    },
-    {
-        title: 'Mobile Innovation',
-        icon: '📱',
-        desc: 'Native and cross-platform mobile experiences that capture engagement on every device.',
-        link: '/services#mobile-app'
-    },
-    {
-        title: 'Brand Identity',
-        icon: '💎',
-        desc: 'Crafting resonant corporate identities that command authority and trust in the digital marketplace.',
-        link: '/services#brand-development'
-    },
-    {
-        title: 'DevOps Engineering',
-        icon: '⚙️',
-        desc: 'Streamlining operations with robust CI/CD pipelines, cloud integration, and automated quality assurance.',
-        link: '/services#devops'
-    },
-    {
-        title: 'Team Augmentation',
-        icon: '👥',
-        desc: 'Injecting elite technical talent into your workflow for rapid scaling and specialized expertise.',
-        link: '/services#augmentation'
+        title: 'POS Systems',
+        icon: '💳',
+        desc: 'Fast checkout. Inventory & sales tracking. Perfect for restaurants & retail.',
+        link: '/services#pos'
     }
 ];
 
@@ -62,11 +32,8 @@ export default function ServiceHighlights() {
             <div className="container">
                 <AnimatedSection>
                     <h2 className="text-gradient" style={{ textAlign: 'center', fontSize: '2.5rem', marginBottom: '1rem' }}>
-                        Core Solutions
+                        Everything You Need to Grow Your Business Online
                     </h2>
-                    <p style={{ textAlign: 'center', color: 'var(--text-secondary)', marginBottom: '4rem', maxWidth: '700px', marginInline: 'auto' }}>
-                        Transforming businesses with tailored digital solutions. From bespoke software to strategic marketing, we architect growth in the digital realm.
-                    </p>
 
                     <div className={styles.grid}>
                         {services.map((service, index) => (
@@ -82,9 +49,11 @@ export default function ServiceHighlights() {
                                 <div className={styles.icon}>{service.icon}</div>
                                 <h3 className={styles.title}>{service.title}</h3>
                                 <p className={styles.desc}>{service.desc}</p>
-                                <Link href={service.link} className={styles.link}>
-                                    Explore &rarr;
-                                </Link>
+                                <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+                                    <Link href="/audit" className={styles.link}>
+                                        👉 Get Free Audit
+                                    </Link>
+                                </div>
                             </motion.div>
                         ))}
                     </div>
