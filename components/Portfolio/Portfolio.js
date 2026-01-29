@@ -7,7 +7,7 @@ const projects = [
     {
         title: "Review Management System",
         description: "A comprehensive review management platform helping businesses aggregate, monitor, and respond to customer feedback.",
-        url: "https://reviewmanagement.vercel.app/",
+        url: "https://reviewmanagment.app/",
         tags: ["Next.js", "SaaS", "Reputation"],
         image: "/portfolio-aura.png",
         featured: true
