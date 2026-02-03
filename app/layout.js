@@ -10,6 +10,11 @@ export const metadata = {
   description: 'Openrize: Building your digital smart home with modern tech stacks and sustainable code. Web development, AI solutions, and digital transformation.',
   manifest: '/manifest.json',
   keywords: ['software development', 'web development', 'AI solutions', 'digital marketing', 'Openrize', 'PWA', 'Next.js'],
+  verification: {
+    other: {
+      'msvalidate.01': 'EAAB6B56735D1CE8A6881C818A7AED2B',
+    },
+  },
   openGraph: {
     title: 'Openrize | End-to-End Software Development Services',
     description: 'Transforming businesses with tailored digital solutions.',
