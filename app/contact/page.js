@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 export const metadata = {
     title: 'Contact Openrize | POS System Support & Sales',
-    description: 'Get in touch with us to learn how Openrize POS system can help your business improve productivity and efficiency. Email: info@openrize.com',
+    description: 'Get in touch with us to learn how Openrize POS system can help your business improve productivity and efficiency. Email: openrize@gmail.com',
 };
 
 export default function ContactPage() {
@@ -24,7 +24,7 @@ export default function ContactPage() {
                         <h3 style={{ marginBottom: '1rem' }}>Support Channels</h3>
                         <p style={{ display: 'flex', alignItems: 'center', marginBottom: '1rem', color: 'var(--text-secondary)' }}>
                             <span style={{ marginRight: '1rem', color: 'var(--accent-blue)' }}>@</span>
-                            info@openrize.com
+                            openrize@gmail.com
                         </p>
                         <p style={{ display: 'flex', alignItems: 'center', marginBottom: '1rem', color: 'var(--text-secondary)' }}>
                             <span style={{ marginRight: '1rem', color: 'var(--accent-blue)' }}>🌐</span>

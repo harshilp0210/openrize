@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import PageHero from '../../../../components/PageHero/PageHero';
+import PageHero from '../../../components/PageHero/PageHero';
 
 export const metadata = {
     title: 'Best POS System for Restaurants in 2026 | Openrize Blog',
