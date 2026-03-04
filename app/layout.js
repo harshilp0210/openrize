@@ -6,18 +6,18 @@ import ChatBot from '../components/ChatBot/ChatBot';
 
 export const metadata = {
   metadataBase: new URL('https://openrize.com'),
-  title: 'Openrize | End-to-End Software Development Services',
-  description: 'Openrize: Building your digital smart home with modern tech stacks and sustainable code. Web development, AI solutions, and digital transformation.',
+  title: 'Restaurant & Retail POS System | Custom POS Software & Website Development | Openrize',
+  description: 'Openrize provides powerful POS systems for restaurants, liquor stores, and retail businesses. Automate operations, increase productivity, and grow faster with Openrize POS.',
   manifest: '/manifest.json',
-  keywords: ['software development', 'web development', 'AI solutions', 'digital marketing', 'Openrize', 'PWA', 'Next.js'],
+  keywords: ['POS system', 'restaurant POS', 'liquor store POS', 'retail POS', 'cloud POS software', 'custom website development', 'Openrize', 'point of sale system'],
   verification: {
     other: {
       'msvalidate.01': 'EAAB6B56735D1CE8A6881C818A7AED2B',
     },
   },
   openGraph: {
-    title: 'Openrize | End-to-End Software Development Services',
-    description: 'Transforming businesses with tailored digital solutions.',
+    title: 'Restaurant & Retail POS System | Custom POS Software | Openrize',
+    description: 'Powerful POS systems for restaurants, liquor stores, and retail businesses. Automate operations and grow faster with Openrize.',
     url: 'https://openrize.com',
     siteName: 'Openrize',
     images: [
@@ -32,8 +32,8 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Openrize',
-    description: 'End-to-End Software Development Services',
+    title: 'Openrize | POS Systems for Restaurants & Retail',
+    description: 'Powerful POS systems for restaurants, liquor stores, and retail businesses.',
     images: ['/logo-v4.png'],
   },
   viewport: {

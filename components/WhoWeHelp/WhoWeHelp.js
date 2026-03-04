@@ -3,10 +3,11 @@ import { motion } from 'framer-motion';
 import styles from './WhoWeHelp.module.css';
 
 const industries = [
-    { title: 'Restaurants & Cafes', icon: '🍽️' },
+    { title: 'Restaurants', icon: '🍽️' },
+    { title: 'Liquor Stores', icon: '🍾' },
     { title: 'Retail Stores', icon: '🛍️' },
-    { title: 'Salons & Clinics', icon: '💇' },
-    { title: 'Service Businesses', icon: '🏢' },
+    { title: 'Cafes', icon: '☕' },
+    { title: 'Small Businesses', icon: '🏢' },
 ];
 
 export default function WhoWeHelp() {
@@ -20,7 +21,7 @@ export default function WhoWeHelp() {
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                     >
-                        Built for Local Businesses Like Yours
+                        Industries We Serve
                     </motion.h2>
 
                     <div className={styles.grid}>
@@ -46,7 +47,7 @@ export default function WhoWeHelp() {
                         viewport={{ once: true }}
                         transition={{ delay: 0.4 }}
                     >
-                        If customers search for you on Google, we help you win that search.
+                        Our POS systems are built specifically for restaurants, liquor stores, and retail businesses.
                     </motion.p>
                 </div>
             </div>

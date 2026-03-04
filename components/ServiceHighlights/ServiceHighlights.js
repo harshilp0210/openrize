@@ -7,22 +7,28 @@ import Link from 'next/link';
 
 const services = [
     {
-        title: 'Website Development',
+        title: 'Restaurant POS System',
+        icon: '🍽️',
+        desc: 'Streamline orders, manage tables, process payments, and track sales in real time with our advanced restaurant POS system.',
+        link: '/restaurant-pos-system'
+    },
+    {
+        title: 'Liquor Store POS System',
+        icon: '🍾',
+        desc: 'Track inventory, manage compliance, scan barcodes, and monitor sales efficiently with a POS built specifically for liquor stores.',
+        link: '/liquor-store-pos-system'
+    },
+    {
+        title: 'Retail POS System',
+        icon: '🛍️',
+        desc: 'Complete retail automation with inventory tracking, sales monitoring, and customer management tools.',
+        link: '/retail-pos-system'
+    },
+    {
+        title: 'Custom Website Development',
         icon: '🌐',
-        desc: 'Mobile-friendly, fast websites. Designed to convert visitors into customers.',
-        link: '/services#web-development'
-    },
-    {
-        title: 'Google Review Management',
-        icon: '⭐',
-        desc: 'Automated review requests. Improve Google rankings & trust.',
-        link: '/services#digital-marketing'
-    },
-    {
-        title: 'POS Systems',
-        icon: '💳',
-        desc: 'Fast checkout. Inventory & sales tracking. Perfect for restaurants & retail.',
-        link: '/services#pos'
+        desc: 'We build modern, fast, and secure websites designed to convert visitors into customers and grow your business online.',
+        link: '/services'
     }
 ];
 
@@ -32,7 +38,7 @@ export default function ServiceHighlights() {
             <div className="container">
                 <AnimatedSection>
                     <h2 className="text-gradient" style={{ textAlign: 'center', fontSize: '2.5rem', marginBottom: '1rem' }}>
-                        Everything You Need to Grow Your Business Online
+                        Our Solutions
                     </h2>
 
                     <div className={styles.grid}>
@@ -50,8 +56,8 @@ export default function ServiceHighlights() {
                                 <h3 className={styles.title}>{service.title}</h3>
                                 <p className={styles.desc}>{service.desc}</p>
                                 <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
-                                    <Link href="/audit" className={styles.link}>
-                                        👉 Get Free Audit
+                                    <Link href={service.link} className={styles.link}>
+                                        Learn More →
                                     </Link>
                                 </div>
                             </motion.div>

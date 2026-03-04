@@ -13,18 +13,19 @@ export default function FreeAuditCTA() {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                 >
-                    <h2 className="text-gradient">Get a FREE Website & Google Review Audit</h2>
+                    <h2 className="text-gradient">Ready to Transform Your Business Operations?</h2>
 
-                    <p className={styles.intro}>In 10–15 minutes, we’ll show you:</p>
+                    <p className={styles.intro}>Request a Free Demo Today and See How Openrize Can Help Your Business Grow.</p>
 
                     <ul className={styles.list}>
-                        <li>🧐 What’s hurting your online visibility</li>
-                        <li>📉 Where you’re losing customers</li>
-                        <li>🚀 Quick fixes that can increase leads</li>
+                        <li>📊 Real-time sales reporting</li>
+                        <li>📦 Smart inventory management</li>
+                        <li>💳 Secure payment processing</li>
+                        <li>☁️ Cloud-based access from anywhere</li>
                     </ul>
 
-                    <Link href="/audit" className={`btn ${styles.ctaButton}`}>
-                        👉 Request Free Audit
+                    <Link href="/demo" className={`btn ${styles.ctaButton}`}>
+                        👉 Request Free Demo
                     </Link>
                 </motion.div>
             </div>

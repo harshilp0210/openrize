@@ -1,9 +1,10 @@
 import styles from './contact.module.css';
 import ContactForm from '../../components/ContactForm/ContactForm';
+import Link from 'next/link';
 
 export const metadata = {
-    title: 'Contact | Openrize',
-    description: 'Get in touch with us for your next project.',
+    title: 'Contact Openrize | POS System Support & Sales',
+    description: 'Get in touch with us to learn how Openrize POS system can help your business improve productivity and efficiency. Email: info@openrize.com',
 };
 
 export default function ContactPage() {
@@ -13,22 +14,30 @@ export default function ContactPage() {
 
                 <div>
                     <h1 className={`text-gradient ${styles.title}`}>
-                        Let's Build Something
+                        Contact Openrize
                     </h1>
                     <p className={styles.description}>
-                        Ready to start your digital construction? Reach out to us for a consultation, quote, or just a chat about technology.
+                        Get in touch with us to learn how Openrize POS system can help your business improve productivity and efficiency.
                     </p>
 
                     <div style={{ marginBottom: '2rem' }}>
                         <h3 style={{ marginBottom: '1rem' }}>Support Channels</h3>
                         <p style={{ display: 'flex', alignItems: 'center', marginBottom: '1rem', color: 'var(--text-secondary)' }}>
                             <span style={{ marginRight: '1rem', color: 'var(--accent-blue)' }}>@</span>
-                            openrize@gmail.com
+                            info@openrize.com
+                        </p>
+                        <p style={{ display: 'flex', alignItems: 'center', marginBottom: '1rem', color: 'var(--text-secondary)' }}>
+                            <span style={{ marginRight: '1rem', color: 'var(--accent-blue)' }}>🌐</span>
+                            www.openrize.com
                         </p>
                         <p style={{ display: 'flex', alignItems: 'center', color: 'var(--text-secondary)' }}>
                             <span style={{ marginRight: '1rem', color: 'var(--accent-blue)' }}>#</span>
                             Live Chat Available 24/7
                         </p>
+                    </div>
+
+                    <div style={{ display: 'flex', gap: '1rem', marginBottom: '2rem', flexWrap: 'wrap' }}>
+                        <Link href="/demo" className="btn">Request Demo</Link>
                     </div>
 
                     {/* Rotating Earth Globe */}

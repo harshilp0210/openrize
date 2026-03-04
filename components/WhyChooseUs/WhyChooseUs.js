@@ -3,10 +3,12 @@ import { motion } from 'framer-motion';
 import styles from './WhyChooseUs.module.css';
 
 const reasons = [
-    "Local-business focused",
-    "Real working systems (not theory)",
-    "Affordable pricing",
-    "Ongoing support"
+    "Increase productivity",
+    "Reduce manual work",
+    "Access reports anytime",
+    "Improve operational efficiency",
+    "Secure and reliable system",
+    "Dedicated support"
 ];
 
 export default function WhyChooseUs() {
@@ -47,7 +49,7 @@ export default function WhyChooseUs() {
                         viewport={{ once: true }}
                         transition={{ delay: 0.5 }}
                     >
-                        We don’t just build websites — we build systems that bring customers.
+                        We don't just build POS systems — we build systems that help your business run smarter.
                     </motion.p>
                 </div>
             </div>

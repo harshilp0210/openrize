@@ -15,7 +15,7 @@ const Hero = () => {
                     transition={{ duration: 0.8, ease: "easeOut" }}
                     className={styles.badge}
                 >
-                    IT Web Development Services
+                    Cloud-Based POS Solutions
                 </motion.div>
 
                 <motion.h1
@@ -24,7 +24,7 @@ const Hero = () => {
                     transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
                     className={styles.title}
                 >
-                    Helping Local Businesses Get More Customers with <span className="text-gradient">Better Websites, Reviews & POS Systems</span>
+                    Powerful POS Systems Built for <span className="text-gradient">Restaurants, Liquor Stores, and Retail Businesses</span>
                 </motion.h1>
 
                 <motion.p
@@ -33,7 +33,7 @@ const Hero = () => {
                     transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
                     className={styles.description}
                 >
-                    Openrize helps restaurants, retail stores, and service businesses grow with modern websites, Google review automation, and fast POS solutions.
+                    Openrize delivers modern cloud-based POS software designed to automate operations, improve productivity, and help your business grow faster. Manage sales, inventory, and reporting from anywhere.
                 </motion.p>
 
                 <motion.div
@@ -42,11 +42,11 @@ const Hero = () => {
                     transition={{ duration: 0.8, delay: 0.6, ease: "easeOut" }}
                     className={styles.actions}
                 >
-                    <Link href="/audit" className="btn">
-                        Get a Free Audit
+                    <Link href="/demo" className="btn">
+                        Request Free Demo
                     </Link>
                     <Link href="/contact" className={styles.secondaryLink}>
-                        Book a Free Demo &rarr;
+                        Contact Us &rarr;
                     </Link>
                 </motion.div>
             </div>
