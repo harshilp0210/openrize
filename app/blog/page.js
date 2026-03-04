@@ -16,6 +16,17 @@ const posts = [
     },
 ];
 
+const cardStyle = {
+    background: 'rgba(255,255,255,0.03)',
+    border: '1px solid rgba(255,255,255,0.08)',
+    borderRadius: '1rem',
+    padding: '2rem',
+    display: 'block',
+    textDecoration: 'none',
+    color: 'inherit',
+    transition: 'border-color 0.2s, transform 0.2s',
+};
+
 export default function BlogPage() {
     return (
         <>
@@ -31,29 +42,18 @@ export default function BlogPage() {
                         <Link
                             key={post.slug}
                             href={`/blog/${post.slug}`}
-                            style={{ textDecoration: 'none', color: 'inherit' }}
+                            style={cardStyle}
                         >
-                            <article style={{
-                                background: 'rgba(255,255,255,0.03)',
-                                border: '1px solid rgba(255,255,255,0.08)',
-                                borderRadius: '1rem',
-                                padding: '2rem',
-                                transition: 'border-color 0.2s, transform 0.2s',
-                            }}
-                                onMouseEnter={e => { e.currentTarget.style.borderColor = 'var(--accent-blue)'; e.currentTarget.style.transform = 'translateY(-4px)'; }}
-                                onMouseLeave={e => { e.currentTarget.style.borderColor = 'rgba(255,255,255,0.08)'; e.currentTarget.style.transform = 'none'; }}
-                            >
-                                <div style={{ display: 'flex', gap: '1rem', marginBottom: '0.75rem', fontSize: '0.85rem', color: 'var(--text-secondary)' }}>
-                                    <span>{post.date}</span>
-                                    <span>·</span>
-                                    <span>{post.readTime}</span>
-                                </div>
-                                <h2 style={{ fontSize: '1.4rem', marginBottom: '0.75rem' }}>{post.title}</h2>
-                                <p style={{ color: 'var(--text-secondary)', lineHeight: 1.7 }}>{post.excerpt}</p>
-                                <span style={{ display: 'inline-block', marginTop: '1rem', color: 'var(--accent-blue)', fontWeight: 600 }}>
-                                    Read More →
-                                </span>
-                            </article>
+                            <div style={{ display: 'flex', gap: '1rem', marginBottom: '0.75rem', fontSize: '0.85rem', color: 'var(--text-secondary)' }}>
+                                <span>{post.date}</span>
+                                <span>·</span>
+                                <span>{post.readTime}</span>
+                            </div>
+                            <h2 style={{ fontSize: '1.4rem', marginBottom: '0.75rem' }}>{post.title}</h2>
+                            <p style={{ color: 'var(--text-secondary)', lineHeight: 1.7 }}>{post.excerpt}</p>
+                            <span style={{ display: 'inline-block', marginTop: '1rem', color: 'var(--accent-blue)', fontWeight: 600 }}>
+                                Read More →
+                            </span>
                         </Link>
                     ))}
                 </div>
