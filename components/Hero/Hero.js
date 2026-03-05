@@ -9,63 +9,63 @@ const Hero = () => {
         <section className={styles.hero}>
             <div className={styles.grid}></div>
             <div className={`container ${styles.content}`} style={{ position: 'relative', zIndex: 2 }}>
+
+                {/* Globe - Left Side */}
                 <motion.div
-                    initial={{ opacity: 0, scale: 0.9 }}
+                    initial={{ opacity: 0, scale: 0.8 }}
                     animate={{ opacity: 1, scale: 1 }}
-                    transition={{ duration: 0.8, ease: "easeOut" }}
-                    className={styles.badge}
+                    transition={{ duration: 1, delay: 0.3, ease: 'easeOut' }}
+                    className={styles.globeWrapper}
                 >
-                    Cloud-Based POS Solutions
+                    <div className={styles.globeInner}>
+                        <img src="/contact-tech.png" alt="Global POS Network" className={styles.globeImage} />
+                    </div>
                 </motion.div>
 
-                <motion.h1
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
-                    className={styles.title}
-                >
-                    Powerful POS Systems Built for <span className="text-gradient">Restaurants, Liquor Stores, and Retail Businesses</span>
-                </motion.h1>
+                {/* Text Content - Right Side */}
+                <div className={styles.textBlock}>
+                    <motion.div
+                        initial={{ opacity: 0, scale: 0.9 }}
+                        animate={{ opacity: 1, scale: 1 }}
+                        transition={{ duration: 0.8, ease: "easeOut" }}
+                        className={styles.badge}
+                    >
+                        Cloud-Based POS Solutions
+                    </motion.div>
 
-                <motion.p
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
-                    className={styles.description}
-                >
-                    Openrize delivers modern cloud-based POS software designed to automate operations, improve productivity, and help your business grow faster. Manage sales, inventory, and reporting from anywhere.
-                </motion.p>
+                    <motion.h1
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
+                        className={styles.title}
+                    >
+                        Powerful POS Systems Built for <span className="text-gradient">Restaurants, Liquor Stores, and Retail Businesses</span>
+                    </motion.h1>
 
-                <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.8, delay: 0.6, ease: "easeOut" }}
-                    className={styles.actions}
-                >
-                    <Link href="/demo" className="btn">
-                        Request Free Demo
-                    </Link>
-                    <Link href="/contact" className={styles.secondaryLink}>
-                        Contact Us &rarr;
-                    </Link>
-                </motion.div>
-            </div>
-            <motion.div
-                initial={{ opacity: 0, rotate: -10, scale: 0.8 }}
-                animate={{ opacity: 1, rotate: 0, scale: 1 }}
-                transition={{ duration: 1, delay: 0.5, ease: "backOut" }}
-                className={styles.visual}
-            >
-                {/* Abstract 3D House/Grid Representation */}
-                <div className={styles.cube}>
-                    <div className={`${styles.face} ${styles.front}`}></div>
-                    <div className={`${styles.face} ${styles.back}`}></div>
-                    <div className={`${styles.face} ${styles.right}`}></div>
-                    <div className={`${styles.face} ${styles.left}`}></div>
-                    <div className={`${styles.face} ${styles.top}`}></div>
-                    <div className={`${styles.face} ${styles.bottom}`}></div>
+                    <motion.p
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
+                        className={styles.description}
+                    >
+                        Openrize delivers modern cloud-based POS software designed to automate operations, improve productivity, and help your business grow faster. Manage sales, inventory, and reporting from anywhere.
+                    </motion.p>
+
+                    <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.8, delay: 0.6, ease: "easeOut" }}
+                        className={styles.actions}
+                    >
+                        <Link href="/demo" className="btn">
+                            Request Free Demo
+                        </Link>
+                        <Link href="/contact" className={styles.secondaryLink}>
+                            Contact Us &rarr;
+                        </Link>
+                    </motion.div>
                 </div>
-            </motion.div>
+            </div>
         </section>
     );
 };
