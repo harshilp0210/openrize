@@ -7,10 +7,10 @@ import FreeAuditCTA from '../components/FreeAuditCTA/FreeAuditCTA';
 export default function Home() {
     return (
         <>
+            <Portfolio />
             <Hero />
             <WhoWeHelp />
             <WhyChooseUs />
-            <Portfolio />
             <FreeAuditCTA />
         </>
     );
