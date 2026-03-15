@@ -5,12 +5,40 @@ import styles from './Portfolio.module.css';
 
 const projects = [
     {
+        title: "GlobalBridge Trade",
+        description: "Provides reliable import, export, and sourcing services for businesses worldwide to connect global markets with trusted trade solutions.",
+        url: "https://globalbridge-7hwx.vercel.app/",
+        tags: ["Import/Export", "Global Sourcing", "B2B Trade"],
+        image: "/portfolio-globalbridge.png"
+    },
+    {
+        title: "Ethnic Elegance",
+        description: "Exquisite collection of India's traditional Lehenga Cholis, Ghagras, and accessories for festive celebrations and weddings.",
+        url: "https://ethnicelegance-5nf5.vercel.app/",
+        tags: ["Ethnic Wear", "E-commerce", "Festive Fashion"],
+        image: "/portfolio-ethnic.png"
+    },
+    {
+        title: "VaporLuxe AI",
+        description: "A premium destination for cutting-edge vaporizers and artisan accessories, offering a refined collection for an elevated experience.",
+        url: "https://www.vaporluxe.ai/",
+        tags: ["AI", "E-commerce", "SaaS"],
+        image: "/portfolio-vaporluxe.png"
+    },
+    {
         title: "Review Management System",
         description: "A comprehensive review management platform helping businesses aggregate, monitor, and respond to customer feedback.",
         url: "https://reviewmanagment.app/",
         tags: ["Next.js", "SaaS", "Reputation"],
         image: "/portfolio-aura.png",
         featured: true
+    },
+    {
+        title: "Matrix Visas",
+        description: "A professional UK visa consultancy website with dynamic service pages, contact forms, and modern responsive design.",
+        url: "https://www.matrixvisas007.com/",
+        tags: ["Next.js", "Responsive Design", "Web Development"],
+        image: "/portfolio-matrixvisas.png"
     },
     {
         title: "Foodies Choice POS",
@@ -20,11 +48,32 @@ const projects = [
         image: "/portfolio-foodies.png"
     },
     {
-        title: "Matrix Visas",
-        description: "A professional UK visa consultancy website with dynamic service pages, contact forms, and modern responsive design.",
-        url: "https://www.matrixvisas007.com/",
-        tags: ["Next.js", "Responsive Design", "Web Development"],
-        image: "/portfolio-matrixvisas.png"
+        title: "Pleasure Nest",
+        description: "A curated sanctuary for adult wellness, offering a discreet and luxurious collection of premium products.",
+        url: "https://pleasure-nest.vercel.app/",
+        tags: ["E-commerce", "Wellness", "Adult Boutique"],
+        image: "/portfolio-pleasure.png"
+    },
+    {
+        title: "CocoaJoy",
+        description: "Premium handcrafted chocolates and truffles designed to bring the sweet joy of pure indulgence to every chocolate lover.",
+        url: "https://cocoajoy.vercel.app/",
+        tags: ["Handcrafted", "E-commerce", "Gifts"],
+        image: "/portfolio-cocoajoy.png"
+    },
+    {
+        title: "PlayJoy Toys",
+        description: "Award-winning online kids' toy store offering a curated collection of safe, durable, and imaginative toys for all ages.",
+        url: "https://playjoytoys.vercel.app/",
+        tags: ["Toys", "E-commerce", "Educational"],
+        image: "/portfolio-playjoy.png"
+    },
+    {
+        title: "Eagle Crest",
+        description: "Curated journeys to the world's most breathtaking destinations, offering extraordinary travel experiences and personalized packages.",
+        url: "https://eaglecrest-flax.vercel.app/",
+        tags: ["Travel", "Luxury", "Destinations"],
+        image: "/portfolio-eaglecrest.png"
     }
 ];
 
