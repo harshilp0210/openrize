@@ -74,6 +74,13 @@ const projects = [
         url: "https://eaglecrest-flax.vercel.app/",
         tags: ["Travel", "Luxury", "Destinations"],
         image: "/portfolio-eaglecrest.png"
+    },
+    {
+        title: "ShantiRoots",
+        description: "ShantiRoots provides authentic Ayurvedic self-care solutions, featuring a curated selection of herbal wellness, skincare, and relaxation products for holistic well-being.",
+        url: "https://shantiroots.vercel.app/",
+        tags: ["Ayurveda", "Wellness", "Skincare", "Herbal"],
+        image: "/shantiroots.png"
     }
 ];
 
