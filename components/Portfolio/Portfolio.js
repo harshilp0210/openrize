@@ -49,7 +49,7 @@ const projects = [
     },
     {
         title: "Pleasure Nest",
-        description: "A curated sanctuary for adult wellness, offering a discreet and luxurious collection of premium products.",
+        description: "A seductive sanctuary for intimacy and exploration, offering a premium collection of luxury adult wellness products for the sophisticated individual.",
         url: "https://pleasure-nest.vercel.app/",
         tags: ["E-commerce", "Wellness", "Adult Boutique"],
         image: "/portfolio-pleasure.png"
