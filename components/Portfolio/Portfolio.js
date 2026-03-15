@@ -113,6 +113,11 @@ const Portfolio = () => {
                             transition={{ duration: 0.5, delay: index * 0.1 }}
                             whileHover={{ y: -8 }}
                         >
+                            <div 
+                                className={styles.cardBg} 
+                                style={{ backgroundImage: `url(${project.image})` }}
+                            />
+                            <div className={styles.overlay} />
 
                             <div className={styles.content}>
                                 <h3>{project.title}</h3>

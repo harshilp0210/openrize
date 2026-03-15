@@ -25,75 +25,114 @@
 }
 
 .card {
+    position: relative;
     background: var(--bg-primary);
     border-radius: 20px;
     overflow: hidden;
-    border: 1px solid rgba(0, 0, 0, 0.05);
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
     text-decoration: none;
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    min-height: 400px;
+}
+
+.cardBg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 0;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.1) 0%,
+        rgba(0, 0, 0, 0.6) 50%,
+        rgba(0, 0, 0, 0.95) 100%
+    );
+    z-index: 1;
+    transition: opacity 0.3s ease;
 }
 
 .card:hover {
-    box-shadow: 0 10px 40px rgba(139, 69, 19, 0.15);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.card:hover .cardBg {
+    transform: scale(1.1);
 }
 
 .featuredCard {
-    border: 2px solid rgba(212, 175, 55, 0.3);
-    box-shadow: 0 4px 20px rgba(212, 175, 55, 0.1);
-}
-
-.featuredCard:hover {
-    border-color: rgba(212, 175, 55, 0.6);
-    box-shadow: 0 10px 40px rgba(212, 175, 55, 0.2);
+    border: 2px solid var(--accent-blue);
+    box-shadow: 0 4px 25px rgba(0, 180, 216, 0.2);
 }
 
 .content {
+    position: relative;
     padding: 2rem;
+    z-index: 2;
+    color: white;
 }
 
 .content h3 {
-    font-size: 1.2rem;
-    margin-bottom: 0.5rem;
-    color: var(--text-primary);
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
+    color: white;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .content p {
-    color: var(--text-secondary);
-    font-size: 0.875rem;
-    line-height: 1.5;
-    margin-bottom: 1rem;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
 }
 
 .tags {
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
 }
 
 .tag {
-    background: rgba(139, 69, 19, 0.1);
-    color: var(--accent-blue);
-    padding: 0.25rem 0.75rem;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(4px);
+    color: white;
+    padding: 0.35rem 0.85rem;
     border-radius: 20px;
-    font-size: 0.7rem;
+    font-size: 0.75rem;
     font-weight: 500;
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .link {
     color: var(--accent-blue);
     font-weight: 600;
-    font-size: 0.9rem;
-    transition: gap 0.2s ease;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
     display: inline-flex;
     align-items: center;
-    gap: 0.25rem;
+    gap: 0.5rem;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 .card:hover .link {
-    gap: 0.5rem;
+    gap: 0.75rem;
+    color: white;
 }
 
 @media (max-width: 768px) {
