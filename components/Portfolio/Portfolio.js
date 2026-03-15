@@ -106,12 +106,7 @@ const Portfolio = () => {
                             transition={{ duration: 0.5, delay: index * 0.1 }}
                             whileHover={{ y: -8 }}
                         >
-                            <div className={styles.imageWrapper}>
-                                <div className={styles.placeholder}>
-                                    <span>{project.featured ? "⭐" : "🌐"}</span>
-                                    <span className={styles.liveTag}>{project.featured ? "Featured Project" : "Live Project"}</span>
-                                </div>
-                            </div>
+
                             <div className={styles.content}>
                                 <h3>{project.title}</h3>
                                 <p>{project.description}</p>
