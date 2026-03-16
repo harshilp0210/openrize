@@ -44,6 +44,14 @@ const socialLinks = [
 const Footer = () => {
     return (
         <footer className={styles.footer}>
+            {/* New CTA Block added per client feedback */}
+            <div className={styles.footerCta}>
+                <div className="container">
+                    <h2 className={styles.ctaHeading}>Ready to Grow Your Business? Let’s Make It Happen</h2>
+                    <Link href="#audit" className={`btn ${styles.ctaButton}`}>Book a Free Audit</Link>
+                </div>
+            </div>
+
             <div className={`container ${styles.container}`}>
                 <div className={styles.top}>
                     <div className={styles.brand}>
@@ -62,6 +70,7 @@ const Footer = () => {
                         <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', marginBottom: '1.5rem', color: 'var(--text-secondary)', fontSize: '0.9rem' }}>
                             <p>📍 Serving Elk Grove Village & Nearby Illinois Areas</p>
                             <p>📞 <a href="tel:2243779043" style={{ color: 'inherit', textDecoration: 'none' }}>(224) 377-9043</a></p>
+                            <p>✉️ <a href="mailto:hello@openrize.com" style={{ color: 'inherit', textDecoration: 'none' }}>hello@openrize.com</a></p>
                         </div>
                         <div className={styles.social}>
                             {socialLinks.map((social, i) => (

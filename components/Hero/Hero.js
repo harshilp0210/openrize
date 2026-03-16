@@ -26,10 +26,10 @@ const Hero = () => {
                 >
                     <p className={styles.servicesEyebrow}>What We Do</p>
                     <h2 className={styles.servicesHeading}>
-                        Software Built to <span className="text-gradient">Grow Small Businesses</span>
+                        <span className="text-gradient">Get More Customers, Reviews, and Revenue</span> — Without the Tech Headache
                     </h2>
                     <p className={styles.servicesSubtext}>
-                        We help independent retailers, restaurants, and liquor stores compete with enterprise tech — at a fraction of the cost.
+                        Openrize helps local businesses build websites, manage reviews, and run smart systems that grow your business — effortlessly.
                     </p>
                     <ul className={styles.servicesList}>
                         {services.map((svc, i) => (
@@ -50,7 +50,7 @@ const Hero = () => {
                     </ul>
                 </motion.div>
 
-                {/* Center — Globe */}
+                {/* Center — Visual Device Placeholder */}
                 <motion.div
                     initial={{ opacity: 0, scale: 0.8 }}
                     animate={{ opacity: 1, scale: 1 }}
@@ -58,7 +58,8 @@ const Hero = () => {
                     className={styles.globeWrapper}
                 >
                     <div className={styles.globeInner}>
-                        <img src="/contact-tech.png" alt="Global POS Network" className={styles.globeImage} />
+                        {/* Placeholder: Add a modern image of a local business (restaurant, salon, retail) with digital devices or charts */}
+                        <img src="/contact-tech.png" alt="Local Business Growth Solutions" className={styles.globeImage} style={{ borderRadius: '12px' }} />
                     </div>
                 </motion.div>
 
@@ -70,7 +71,7 @@ const Hero = () => {
                         transition={{ duration: 0.8, ease: 'easeOut' }}
                         className={styles.badge}
                     >
-                        Cloud-Based POS Solutions
+                        Growth Solutions for Local Business
                     </motion.div>
 
                     <motion.h1
@@ -79,7 +80,7 @@ const Hero = () => {
                         transition={{ duration: 0.8, delay: 0.2, ease: 'easeOut' }}
                         className={styles.title}
                     >
-                        Powerful POS Systems Built for <span className="text-gradient">Restaurants, Liquor Stores, and Retail Businesses</span>
+                        Powerful Systems Built for <span className="text-gradient">Restaurants, Retail, and Service Businesses</span>
                     </motion.h1>
 
                     <motion.p
@@ -88,7 +89,7 @@ const Hero = () => {
                         transition={{ duration: 0.8, delay: 0.4, ease: 'easeOut' }}
                         className={styles.description}
                     >
-                        Openrize delivers modern cloud-based POS software designed to automate operations, improve productivity, and help your business grow faster. Manage sales, inventory, and reporting from anywhere.
+                        Openrize delivers modern solutions designed to automate operations, improve your online reputation, and help your business attract more customers. Manage websites, reviews, and POS from one trusted partner.
                     </motion.p>
 
                     <motion.div
@@ -97,11 +98,11 @@ const Hero = () => {
                         transition={{ duration: 0.8, delay: 0.6, ease: 'easeOut' }}
                         className={styles.actions}
                     >
-                        <Link href="/demo" className="btn">
-                            Request Free Demo
+                        <Link href="#audit" className="btn">
+                            Book Your Free Audit
                         </Link>
-                        <Link href="/contact" className={styles.secondaryLink}>
-                            Contact Us &rarr;
+                        <Link href="#how-it-works" className={styles.secondaryLink}>
+                            See How It Works &rarr;
                         </Link>
                     </motion.div>
                 </div>

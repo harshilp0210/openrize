@@ -1,8 +1,32 @@
 .footer {
     background: var(--bg-secondary);
-    padding: 4rem 0 2rem;
+    padding: 0 0 2rem 0;
     margin-top: 4rem;
     border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.footerCta {
+    background: linear-gradient(135deg, rgba(var(--color-primary-rgb), 0.1), rgba(var(--color-secondary-rgb), 0.1));
+    padding: 4rem 2rem;
+    text-align: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    margin-bottom: 4rem;
+}
+
+.ctaHeading {
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+    color: var(--text-primary);
+}
+
+.ctaButton {
+    min-width: 250px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
 }
 
 .top {

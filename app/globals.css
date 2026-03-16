@@ -16,6 +16,11 @@ html {
   --accent-purple: #A0522D;
   /* Sienna */
   --accent-gradient: linear-gradient(135deg, var(--accent-blue), var(--accent-purple));
+  
+  /* Layout & Borders */
+  --bg-card: #ffffff;
+  --border-color: rgba(0, 0, 0, 0.08);
+  --color-primary-rgb: 62, 39, 35; /* #3e2723 */
 
   /* Spacing */
   --spacing-xs: 0.5rem;

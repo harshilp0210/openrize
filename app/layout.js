@@ -3,13 +3,14 @@ import Header from '../components/Header/Header';
 import Footer from '../components/Footer/Footer';
 import GlobalBackground from '../components/GlobalBackground/GlobalBackground';
 import ChatBot from '../components/ChatBot/ChatBot';
+import LeadCapture from '../components/LeadCapture/LeadCapture';
 
 export const metadata = {
   metadataBase: new URL('https://openrize.com'),
   title: 'Restaurant & Retail POS System | Custom POS Software & Website Development | Openrize',
   description: 'Openrize provides powerful POS systems for restaurants, liquor stores, and retail businesses. Automate operations, increase productivity, and grow faster with Openrize POS.',
   manifest: '/manifest.json',
-  keywords: ['POS system', 'restaurant POS', 'liquor store POS', 'retail POS', 'cloud POS software', 'custom website development', 'Openrize', 'point of sale system'],
+  keywords: ['POS system', 'restaurant POS', 'liquor store POS', 'retail POS', 'cloud POS software', 'custom website development', 'Openrize', 'point of sale system', 'local business website', 'POS system for restaurants', 'Google reviews automation'],
   verification: {
     other: {
       'msvalidate.01': 'EAAB6B56735D1CE8A6881C818A7AED2B',
@@ -54,6 +55,7 @@ export default function RootLayout({ children }) {
         <main>{children}</main>
         <Footer />
         <ChatBot />
+        <LeadCapture />
       </body>
     </html>
   );

@@ -1,6 +1,6 @@
 .section {
     padding: 6rem 0;
-    background: var(--bg-primary);
+    background: var(--bg-secondary);
 }
 
 .content {
@@ -16,7 +16,7 @@
 }
 
 .listWrapper {
-    background: var(--bg-secondary);
+    background: var(--bg-primary);
     padding: 3rem;
     border-radius: 20px;
     margin-bottom: 3rem;

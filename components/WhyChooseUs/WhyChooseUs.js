@@ -3,12 +3,10 @@ import { motion } from 'framer-motion';
 import styles from './WhyChooseUs.module.css';
 
 const reasons = [
-    "Increase productivity",
-    "Reduce manual work",
-    "Access reports anytime",
-    "Improve operational efficiency",
-    "Secure and reliable system",
-    "Dedicated support"
+    { text: "Grow Faster: Modern websites that attract leads 24/7", emoji: "🚀" },
+    { text: "Boost Reputation: Automate Google reviews & client feedback", emoji: "⭐" },
+    { text: "Simplify Operations: POS, scheduling, and systems in one place", emoji: "💼" },
+    { text: "Track Results: Real metrics, real growth", emoji: "📊" }
 ];
 
 export default function WhyChooseUs() {
@@ -35,8 +33,8 @@ export default function WhyChooseUs() {
                                     viewport={{ once: true }}
                                     transition={{ delay: index * 0.1 }}
                                 >
-                                    <span className={styles.check}>✅</span>
-                                    {reason}
+                                    <span className={styles.check}>{reason.emoji}</span>
+                                    {reason.text}
                                 </motion.li>
                             ))}
                         </ul>
