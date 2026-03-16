@@ -52,7 +52,7 @@ const projects = [
         description: "A provocative and high-end sanctuary for exploration and sensory delight, featuring a curated collection of premium BDSM and luxury adult wellness essentials.",
         url: "https://pleasure-nest.vercel.app/",
         tags: ["E-commerce", "Wellness", "Adult Boutique"],
-        image: "/portfolio-pleasure.png"
+        image: "/portfolio-pleasure.jpg"
     },
     {
         title: "CocoaJoy",
