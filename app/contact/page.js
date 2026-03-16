@@ -30,6 +30,10 @@ export default function ContactPage() {
                             <span style={{ marginRight: '1rem', color: 'var(--accent-blue)' }}>🌐</span>
                             www.openrize.com
                         </p>
+                        <p style={{ display: 'flex', alignItems: 'center', marginBottom: '1rem', color: 'var(--text-secondary)' }}>
+                            <span style={{ marginRight: '1rem', color: 'var(--accent-blue)' }}>📞</span>
+                            <a href="tel:2243779043" style={{ color: 'inherit', textDecoration: 'none' }}>(224) 377-9043</a>
+                        </p>
                         <p style={{ display: 'flex', alignItems: 'center', color: 'var(--text-secondary)' }}>
                             <span style={{ marginRight: '1rem', color: 'var(--accent-blue)' }}>#</span>
                             Live Chat Available 24/7

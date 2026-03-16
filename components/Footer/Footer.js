@@ -61,7 +61,7 @@ const Footer = () => {
                         <p style={{ marginBottom: '1rem' }}>Building the foundation for your digital future.</p>
                         <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', marginBottom: '1.5rem', color: 'var(--text-secondary)', fontSize: '0.9rem' }}>
                             <p>📍 Serving Elk Grove Village & Nearby Illinois Areas</p>
-                            <p>📞 Free Consultation Available</p>
+                            <p>📞 <a href="tel:2243779043" style={{ color: 'inherit', textDecoration: 'none' }}>(224) 377-9043</a></p>
                         </div>
                         <div className={styles.social}>
                             {socialLinks.map((social, i) => (
