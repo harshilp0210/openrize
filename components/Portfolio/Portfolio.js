@@ -41,7 +41,7 @@ const projects = [
         image: "/portfolio-matrixvisas.png"
     },
     {
-        title: "Foodies Choice POS",
+        title: "Foodies Choice",
         description: "A modern Point of Sale system for restaurants, featuring inventory management, order processing, and real-time sales tracking.",
         url: "https://foodies-choice-pos-cbng.vercel.app/",
         tags: ["Next.js", "POS", "Restaurant"],
