@@ -70,7 +70,7 @@ const Footer = () => {
                         <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', marginBottom: '1.5rem', color: 'var(--text-secondary)', fontSize: '0.9rem' }}>
                             <p>📍 Serving Elk Grove Village & Nearby Illinois Areas</p>
                             <p>📞 <a href="tel:2243779043" style={{ color: 'inherit', textDecoration: 'none' }}>(224) 377-9043</a></p>
-                            <p>✉️ <a href="mailto:hello@openrize.com" style={{ color: 'inherit', textDecoration: 'none' }}>hello@openrize.com</a></p>
+                            <p>✉️ <a href="mailto:openrize@gmail.com" style={{ color: 'inherit', textDecoration: 'none' }}>openrize@gmail.com</a></p>
                         </div>
                         <div className={styles.social}>
                             {socialLinks.map((social, i) => (

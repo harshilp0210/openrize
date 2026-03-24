@@ -81,23 +81,6 @@ export default function Testimonials() {
                     ))}
                 </div>
 
-                <motion.div
-                    className={styles.logos}
-                    initial={{ opacity: 0 }}
-                    whileInView={{ opacity: 1 }}
-                    viewport={{ once: true }}
-                    transition={{ delay: 0.4 }}
-                >
-                    <p className={styles.logosTitle}>Trusted by growing brands</p>
-                    <div className={styles.logoGrid}>
-                        {/* Placeholders for logos */}
-                        <div className={styles.logoItem}>Logo 1</div>
-                        <div className={styles.logoItem}>Logo 2</div>
-                        <div className={styles.logoItem}>Logo 3</div>
-                        <div className={styles.logoItem}>Logo 4</div>
-                        <div className={styles.logoItem}>Logo 5</div>
-                    </div>
-                </motion.div>
             </div>
         </section>
     );
