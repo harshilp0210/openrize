@@ -81,6 +81,13 @@ const projects = [
         url: "https://shantiroots.vercel.app/",
         tags: ["Ayurveda", "Wellness", "Skincare", "Herbal"],
         image: "/shantiroots.png"
+    },
+    {
+        title: "Sea Sky Logistic",
+        description: "Comprehensive logistics and freight solutions, specializing in global shipping, cargo management, and supply chain optimization for businesses worldwide.",
+        url: "https://www.seaskylogistic.com/",
+        tags: ["Logistics", "Freight", "Supply Chain"],
+        image: "/portfolio-seasky.png"
     }
 ];
 
