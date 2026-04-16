@@ -14,7 +14,7 @@ const projects = [
     {
         title: "Ethnic Elegance",
         description: "Exquisite collection of India's traditional Lehenga Cholis, Ghagras, and accessories for festive celebrations and weddings.",
-        url: "https://ethnicelegance-5nf5.vercel.app/",
+        url: "https://ethnicelegance.vercel.app/",
         tags: ["Ethnic Wear", "E-commerce", "Festive Fashion"],
         image: "/portfolio-ethnic.png"
     },
