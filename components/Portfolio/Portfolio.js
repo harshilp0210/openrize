@@ -7,7 +7,7 @@ const projects = [
     {
         title: "GlobalBridge Trade",
         description: "Provides reliable import, export, and sourcing services for businesses worldwide to connect global markets with trusted trade solutions.",
-        url: "https://globalbridge-7hwx.vercel.app/",
+        url: "https://globalbridgesupply.com/",
         tags: ["Import/Export", "Global Sourcing", "B2B Trade"],
         image: "/portfolio-globalbridge.png"
     },
