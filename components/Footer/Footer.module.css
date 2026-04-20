@@ -108,6 +108,16 @@
     font-size: 0.9rem;
 }
 
+.logoLink {
+    display: inline-block;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+.logoContainer {
+    width: 180px;
+}
+
 @media (max-width: 768px) {
     .top {
         grid-template-columns: 1fr;

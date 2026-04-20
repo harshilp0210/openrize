@@ -55,17 +55,17 @@ const Footer = () => {
             <div className={`container ${styles.container}`}>
                 <div className={styles.top}>
                     <div className={styles.brand}>
-                        <Link href="/" style={{ display: 'inline-block', marginBottom: '1rem' }}>
+                        <Link href="/" className={styles.logoLink}>
                             <div className={styles.logoContainer}>
                                 <Image
                                     src="/logo-v4.png"
                                     alt="Openrize Footer Logo"
                                     width={180}
                                     height={55}
-                                    className={styles.logo}
-                                    style={{ width: '180px', height: 'auto', objectFit: 'contain' }}
+                                    style={{ width: '100%', height: 'auto', objectFit: 'contain' }}
                                 />
-                            </div>        </Link>
+                            </div>
+                        </Link>
                         <p style={{ marginBottom: '1rem' }}>Building the foundation for your digital future.</p>
                         <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', marginBottom: '1.5rem', color: 'var(--text-secondary)', fontSize: '0.9rem' }}>
                             <p>📍 Serving Elk Grove Village & Nearby Illinois Areas</p>
@@ -101,6 +101,7 @@ const Footer = () => {
                         <ul>
                             <li><Link href="/about">About Us</Link></li>
                             <li><Link href="/pricing">Pricing</Link></li>
+                            <li><Link href="/faq">FAQ</Link></li>
                             <li><Link href="/contact">Contact</Link></li>
                         </ul>
                     </div>

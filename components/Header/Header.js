@@ -25,9 +25,8 @@ const Header = () => {
                         alt="Openrize Logo"
                         width={220}
                         height={65}
-                        className={styles.logo}
                         priority
-                        style={{ width: '220px', height: 'auto', maxHeight: '70px', objectFit: 'contain' }}
+                        style={{ width: '100%', height: 'auto', maxHeight: '70px', objectFit: 'contain' }}
                     />
                 </Link>
 
@@ -46,6 +45,7 @@ const Header = () => {
                 <nav className={`${styles.nav} ${isMenuOpen ? styles.navOpen : ''}`}>
                     <Link href="/services" className={styles.navLink} onClick={closeMenu}>Services</Link>
                     <Link href="/pricing" className={styles.navLink} onClick={closeMenu}>Pricing</Link>
+                    <Link href="/faq" className={styles.navLink} onClick={closeMenu}>FAQ</Link>
                     <Link href="/about" className={styles.navLink} onClick={closeMenu}>About</Link>
                     <Link href="/contact" className={styles.navLink} onClick={closeMenu}>Contact</Link>
                 </nav>
